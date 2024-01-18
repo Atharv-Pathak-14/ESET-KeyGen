@@ -129,7 +129,7 @@ if __name__ == '__main__':
             EsetKeyG = eset_keygen.EsetKeygen(email_obj, driver)
             EsetKeyG.sendRequestForKey()
             license_name, license_out_date, license_key = EsetKeyG.getLicenseData()
-            output_line = f'\nLicense Name: {license_name}\nLicense Out Date: {license_out_date}\nLicense Key: {license_key}\n'
+            output_line = f'License Key: {license_key}\n'
             output_filename = 'ESET KEYS.txt'
         logger.console_log(output_line)
         date = datetime.datetime.now()
