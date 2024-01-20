@@ -11,7 +11,7 @@ on:
       key:
         description: 'Number of Keys to be generated (default = 1)'
         required: false
-        default: '1'
+        default: '25'
 
 jobs:
   GenerateKey:
@@ -21,7 +21,7 @@ jobs:
         run: |
           ACCOUNT=${{ github.event.inputs.account }}
           KEY=${{ github.event.inputs.key }}
-          git clone https://github.com/rzc0d3r/ESET-KeyGen.git
+          git clone https://github.com/Atharv-Pathak-14/ESET-KeyGen.git
           cd ESET-KeyGen
           sudo apt update
           sudo apt install python3-pip
